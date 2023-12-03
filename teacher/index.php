@@ -6,7 +6,7 @@ if(isset($_POST['submit']))
 {
     $username=$_POST['username'];
     $password=md5($_POST['password']);
-$query=mysqli_query($con,"SELECT * FROM admin WHERE username='$username' and password='$password' ");
+$query=mysqli_query($con,"SELECT * FROM admin WHERE username='$username' and password='$password'");
 $num=mysqli_fetch_array($query);
 if($num>0)
 {
@@ -48,8 +48,8 @@ exit();
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                              <li><a href="../index.php">Főoldal </a></li>
                              <li><a href="../admin/index.php">Admin belépés </a></li>
-                              <li><a href="index.php">Tanároknak belépés </a></li>
-                              <li><a href="../index.php">Hallgatóknak belépés </a></li>
+                              <li><a href="index.php">Tanároknak belépés</a></li>
+                              <li><a href="../index.php">Hallgatóknak belépés</a></li>
         
 
                         </ul>
