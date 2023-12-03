@@ -18,7 +18,7 @@ $seatlimit=$_POST['seatlimit'];
 $ret=mysqli_query($con,"update course set courseCode='$coursecode',courseName='$coursename',courseUnit='$courseunit',noofSeats='$seatlimit',updationDate='$currentTime' where id='$id'");
 if($ret)
 {
-echo '<script>alert("Course Updated Successfully !!")</script>';
+echo '<script>alert("Vizsgára vonatkozó adatok frissűltek !!")</script>';
 echo '<script>window.location.href=course.php</script>';
 }else{
   echo '<script>alert("Error : Course not Updated!!")</script>';
@@ -76,28 +76,24 @@ while($row=mysqli_fetch_array($sql))
 ?>
 <p><b>Last Updated at</b> :<?php echo htmlentities($row['updationDate']);?></p>
    <div class="form-group">
-    <label for="coursecode">Course Code  </label>
+    <label for="coursecode">Kurzuskód  </label>
     <input type="text" class="form-control" id="coursecode" name="coursecode" placeholder="Course Code" value="<?php echo htmlentities($row['courseCode']);?>" required />
   </div>
 
  <div class="form-group">
-    <label for="coursename">Course Name  </label>
+    <label for="coursename">Kurzus neve  </label>
     <input type="text" class="form-control" id="coursename" name="coursename" placeholder="Course Name" value="<?php echo htmlentities($row['courseName']);?>" required />
   </div>
 
 <div class="form-group">
-    <label for="courseunit">Course unit  </label>
+    <label for="courseunit">Max fő  </label>
     <input type="text" class="form-control" id="courseunit" name="courseunit" placeholder="Course Unit" value="<?php echo htmlentities($row['courseUnit']);?>" required />
   </div>  
 
-<div class="form-group">
-    <label for="seatlimit">Seat limit  </label>
-    <input type="text" class="form-control" id="seatlimit" name="seatlimit" placeholder="Seat limit" value="<?php echo htmlentities($row['noofSeats']);?>" required />
-  </div>  
 
 
 <?php } ?>
- <button type="submit" name="submit" class="btn btn-default"><i class=" fa fa-refresh "></i> Update</button>
+ <button type="submit" name="submit" class="btn btn-default"><i class=" fa fa-refresh "></i> Frissít</button>
 </form>
                             </div>
                             </div>
@@ -113,13 +109,8 @@ while($row=mysqli_fetch_array($sql))
 
         </div>
     </div>
-    <!-- CONTENT-WRAPPER SECTION END-->
   <?php include('includes/footer.php');?>
-    <!-- FOOTER SECTION END-->
-    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY SCRIPTS -->
     <script src="../assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
     <script src="../assets/js/bootstrap.js"></script>
 </body>
 </html>
