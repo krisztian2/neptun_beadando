@@ -49,7 +49,7 @@ header("location:http:index.php");
                              <li><a href="index.php">Főoldal </a></li>
                              <li><a href="admin/">Admin belépés </a></li>
                              <li><a href="kezelofelulet/">Tanároknak belépés </a></li>
-                              <li><a href="index.php">Hallgatói belépés</a></li>
+                              <li><a href="index.php">Hallgatói belépés </a></li>
         
 
                         </ul>
