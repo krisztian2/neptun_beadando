@@ -48,8 +48,8 @@ exit();
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                              <li><a href="../index.php">Főoldal </a></li>
                              <li><a href="../admin/index.php">Admin belépés </a></li>
-                              <li><a href="index.php">Tanároknak belépés</a></li>
-                              <li><a href="../index.php">Hallgatóknak belépés</a></li>
+                              <li><a href="index.php">Tanároknak belépés </a></li>
+                              <li><a href="../index.php">Hallgatóknak belépés </a></li>
         
 
                         </ul>
@@ -87,13 +87,10 @@ exit();
             </div>
         </div>
     </div>
-    <!-- CONTENT-WRAPPER SECTION END-->
     <?php include('includes/footer.php');?>
-    <!-- FOOTER SECTION END-->
-    <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY SCRIPTS -->
+
     <script src="../assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
+
     <script src="../assets/js/bootstrap.js"></script>
 </body>
 </html>
